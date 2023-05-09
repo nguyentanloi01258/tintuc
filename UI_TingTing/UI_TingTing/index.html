@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta name="description" content="Magz is a HTML5 & CSS3 magazine template is based on Bootstrap 3.">
+	<meta name="author" content="Kodinger">
+	<meta name="keyword" content="magz, html5, css3, template, magazine template">
+	<!-- Shareable -->
+	<meta property="og:title" content="HTML5 & CSS3 magazine template is based on Bootstrap 3" />
+	<meta property="og:type" content="article" />
+	<meta property="og:url" content="http://github.com/nauvalazhar/Magz" />
+	<meta property="og:image" content="https://raw.githubusercontent.com/nauvalazhar/Magz/master/images/preview.png" />
+	<link rel="icon" type="image/png" href="../images/TingTing.online.png">
+  <title>
+    RS1 Tin tức
+  </title>
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="scripts/bootstrap/bootstrap.min.css">
+	<!-- IonIcons -->
+	<link rel="stylesheet" href="scripts/ionicons/css/ionicons.min.css">
+	<!-- Toast -->
+	<link rel="stylesheet" href="scripts/toast/jquery.toast.min.css">
+	<!-- OwlCarousel -->
+	<link rel="stylesheet" href="scripts/owlcarousel/dist/assets/owl.carousel.min.css">
+	<link rel="stylesheet" href="scripts/owlcarousel/dist/assets/owl.theme.default.min.css">
+	<!-- Magnific Popup -->
+	<link rel="stylesheet" href="scripts/magnific-popup/dist/magnific-popup.css">
+	<link rel="stylesheet" href="scripts/sweetalert/dist/sweetalert.css">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+	<!-- Custom style -->
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/skins/all.css">
+	<link rel="stylesheet" href="css/demo.css">
+</head>
+<style>
+	h1, h2{
+		font-style: normal;
+		font-variant-caps: normal;
+		font-variant-ligatures: normal;
+		font-variant-numeric: normal;
+		font-variant-east-asian: normal;
+		font-weight: bold;
+		font-stretch: normal;
+		line-height: normal;
+		font-family: Roboto;
+	}
+</style>
+<body class="skin-orange" >
+	<header class="primary">
+		<div class="firstbar">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-3 col-sm-12">
+						<div class="brand">
+							<a href="index.html">
+								<img src="images/TingTing.online.png" alt="TingTing logo">
+							</a>
+						</div>
+					</div>
+					<div class="col-md-6 col-sm-12">
+						<form class="search" autocomplete="off">
+							<div class="form-group">
+								<div class="input-group">
+									<input type="text" name="q" class="form-control" placeholder="Nhập vào để tìm kiếm">
+									<div class="input-group-btn">
+										<button class="btn btn-primary"><i class="ion-search"></i></button>
+									</div>
+								</div>
+							</div>
+
+						</form>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+
+		<!-- Start nav -->
+		<nav class="menu">
+			<div class="container">
+				<div class="brand">
+					<a href="#">
+						<img src="images/TingTing.online.png" alt="Magz Logo">
+					</a>
+				</div>
+				<div class="mobile-toggle">
+					<a href="#" data-toggle="menu" data-target="#menu-list"><i class="ion-navicon-round"></i></a>
+				</div>
+				<div class="mobile-toggle">
+					<a href="#" data-toggle="sidebar" data-target="#sidebar"><i class="ion-ios-arrow-left"></i></a>
+				</div>
+				<div id="menu-list">
+					<ul class="nav-list menuListCategory" style="overflow:hidden ;font-size: 14px;">
+						<li class="for-tablet nav-title"><a>Menu</a></li>
+						<li><a href="index.html"><img src="images/icon/icons8_Home_32.png" alt="HomeIcon"> Trang chủ </a>
+						</li>
+						
+
+					
+
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<!-- End nav -->
+	</header>
+
+	<section class="home">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8 col-sm-12 col-xs-12">
+				
+					<div class="w3-content w3-display-container">
+						<div class="formimage">
+							<!-- -
+								----Lấy từ API vào ----
+							------>
+						</div>
+
+						<button class="w3-button w3-display-left w3-black " onclick="plusDivs(-1)">&#10094;</button>
+						<button class="w3-button w3-display-right w3-black " onclick="plusDivs(1)">&#10095;</button>
+
+					</div>
+
+					<div class="line">
+						<div style="font-family: Arial, Helvetica, sans-serif;font-weight:bold ;font-size: large;">tin mới nhất</div>
+					</div>
+					<div class="row latestNews">
+						<!-- -
+								----Lấy từ API vào ----
+							------>
+					</div>
+					<!-- <div class="banner">
+						<a href="#">
+							<img src="images/ads.png" alt="Sample Article">
+						</a>
+					</div> -->
+					<div class="line transparent little"></div>
+					
+					<div class="line top">
+						<div style="font-family:Roboto;font-weight:bold ;font-size: large;">Một số tin tức khác</div>
+					</div>
+					<div class="row orderNew">
+						<!-- -
+								----Lấy từ API vào ----
+						------>
+						
+					</div>
+				</div>
+				<div class="col-xs-6 col-md-4 sidebar" id="sidebar">
+					<div class="sidebar-title for-tablet">Sidebar</div>
+					<aside>
+						<img src="../image_QC/thiet-ke-banner-ads.jpg" alt="" style="width: 100%; border: 2px solid lightgray;">
+						<!-- <div class="aside-body">
+							<div class="featured-author">
+								<div class="featured-author-inner">
+									<div class="featured-author-cover"
+										style="background-image: url('images/news/img15.jpg');">
+										<div class="badges">
+											<div class="badge-item"><i class="ion-star"></i> Featured</div>
+										</div>
+										<div class="featured-author-center">
+											<figure class="featured-author-picture">
+												<img src="images/img01.jpg" alt="Sample Article">
+											</figure>
+											<div class="featured-author-info">
+												<h2 class="name">John Doe</h2>
+												<div class="desc">@JohnDoe</div>
+											</div>
+										</div>
+									</div>
+									<div class="featured-author-body">
+										<div class="featured-author-count">
+											<div class="item">
+												<a href="#">
+													<div class="name">Posts</div>
+													<div class="value">208</div>
+												</a>
+											</div>
+											<div class="item">
+												<a href="#">
+													<div class="name">Stars</div>
+													<div class="value">3,729</div>
+												</a>
+											</div>
+											<div class="item">
+												<a href="#">
+													<div class="icon">
+														<div>More</div>
+														<i class="ion-chevron-right"></i>
+													</div>
+												</a>
+											</div>
+										</div>
+										<div class="featured-author-quote">
+											"Eur costrict mobsa undivani krusvuw blos andugus pu aklosah"
+										</div>
+										<div class="block">
+											<h2 class="block-title">Photos</h2>
+											<div class="block-body">
+												<ul class="item-list-round" data-magnific="gallery">
+													<li><a href="images/news/img06.jpg"
+															style="background-image: url('images/news/img06.jpg');"></a>
+													</li>
+													<li><a href="images/news/img07.jpg"
+															style="background-image: url('images/news/img07.jpg');"></a>
+													</li>
+													<li><a href="images/news/img08.jpg"
+															style="background-image: url('images/news/img08.jpg');"></a>
+													</li>
+													<li><a href="images/news/img09.jpg"
+															style="background-image: url('images/news/img09.jpg');"></a>
+													</li>
+													<li><a href="images/news/img10.jpg"
+															style="background-image: url('images/news/img10.jpg');"></a>
+													</li>
+													<li><a href="images/news/img11.jpg"
+															style="background-image: url('images/news/img11.jpg');"></a>
+													</li>
+													<li><a href="images/news/img12.jpg"
+															style="background-image: url('images/news/img12.jpg');">
+															<div class="more">+2</div>
+														</a></li>
+													<li class="hidden"><a href="images/news/img13.jpg"
+															style="background-image: url('images/news/img13.jpg');"></a>
+													</li>
+													<li class="hidden"><a href="images/news/img14.jpg"
+															style="background-image: url('images/news/img14.jpg');"></a>
+													</li>
+												</ul>
+											</div>
+										</div>
+										
+									</div>
+								</div>
+							</div>
+						</div> -->
+					</aside>
+					<aside>
+						<h1 class="aside-title">Nổi bật <a href="#" class="all">Xem thêm <i
+									class="ion-ios-arrow-right"></i></a></h1>
+						<div class="aside-body featuredPosts">
+							<!--  
+								----
+								----Lấy từ API vào ----
+							---
+								---
+							-->
+						</div>
+					</aside>
+					<aside>
+						<h1 class="aside-title">
+							Tin nóng
+							<div class="carousel-nav" id="hot-news-nav">
+								<div class="prev">
+									<i class="ion-ios-arrow-left"></i>
+								</div>
+								<div class="next">
+									<i class="ion-ios-arrow-right"></i>
+								</div>
+							</div>
+						</h1>
+						<div class="aside-body">
+							<div data-max="5" data-nav="#hot-news-nav"
+								data-item="article" class="hotNews">
+								<!--  
+									----
+								----Lấy từ API vào ----
+								---
+								----->
+							</div>
+						</div>
+					</aside>
+	
+				</div>
+			</div>
+		</div>
+	</section>
+
+	
+
+	<!-- Start footer -->
+	<footer class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4 col-sm-6 col-xs-12">
+					<div class="block" style="margin: 0 2.5%;">
+						<h1 class="block-title">Bài Đăng Mới</h1>
+						<div class="block-body">
+							<p style="color: white;">Hãy đăng ký email để nhận được các bài viết mới nhất</p>
+							<form class="newsletter">
+								<div class="input-group">
+									<div class="input-group-addon">
+										<i class="ion-ios-email-outline"></i>
+									</div>
+									<input type="email" class="form-control email" placeholder="Your mail">
+								</div>
+								<button class="btn btn-primary btn-block white">Subscribe</button>
+							</form>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-3 col-xs-12 col-sm-6" style="margin:auto;padding: auto;margin: 0 2.5%;">
+					<div class="block">
+						<h1 class="block-title">Theo Dõi</h1>
+						<div class="block-body">
+							<p style="color: white;">Theo dõi chúng tôi trên các trang mạng xã hội</p>
+
+							<ul class="social trp">
+								<li>
+									<a href="#" class="facebook">
+										<svg>
+											<rect width="0" height="0" />
+										</svg>
+										<i class="ion-social-facebook"></i>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="twitter">
+										<svg>
+											<rect width="0" height="0" />
+										</svg>
+										<i class="ion-social-twitter-outline"></i>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="youtube">
+										<svg>
+											<rect width="0" height="0" />
+										</svg>
+										<i class="ion-social-youtube-outline"></i>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="googleplus">
+										<svg>
+											<rect width="0" height="0" />
+										</svg>
+										<i class="ion-social-googleplus"></i>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="instagram">
+										<svg>
+											<rect width="0" height="0" />
+										</svg>
+										<i class="ion-social-instagram-outline"></i>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="tumblr">
+										<svg>
+											<rect width="0" height="0" />
+										</svg>
+										<i class="ion-social-tumblr"></i>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="dribbble">
+										<svg>
+											<rect width="0" height="0" />
+										</svg>
+										<i class="ion-social-dribbble"></i>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="linkedin">
+										<svg>
+											<rect width="0" height="0" />
+										</svg>
+										<i class="ion-social-linkedin"></i>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="skype">
+										<svg>
+											<rect width="0" height="0" />
+										</svg>
+										<i class="ion-social-skype"></i>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="rss">
+										<svg>
+											<rect width="0" height="0" />
+										</svg>
+										<i class="ion-social-rss"></i>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-6 col-xs-12">
+					<div class="block" style="margin: 0 2.5%;">
+						<h1 class="block-title">Mô Tả Trang Web</h1>
+						<div class="block-body" style="color: white;">
+							<p>Chúng tôi sẽ luôn cung cấp cho các bạn đọc những tinh tức mới nhất về các lĩnh vực trong
+								xã hội như thể thao, giải trí, thực phẩm, công nghệ... hãy đăng kí để có thể nhận được
+								các thông báo mới nhất từ chúng tôi.</p>
+						</div>
+					</div>
+				</div>
+
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+
+					<h5 style="font-family: 'Times New Roman', Times, serif;color: white;">Địa chỉ cơ sở</h5>
+					<iframe
+						src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3917.1370013079822!2d106.80006621459071!3d10.953022192201832!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3174d95970202f3f%3A0x679e7fa6d33f74e5!2zVHLGsOG7nW5nIMSR4bqhaSBo4buNYyBM4bqhYyBI4buTbmcsIEPGoSBz4bufIDE!5e0!3m2!1svi!2sid!4v1667895245513!5m2!1svi!2sid"
+						width="100%" height="450" style="border:0;" allowfullscreen loading="lazy"
+						referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<div class="copyright">
+						COPYRIGHT &copy; Team RS1, 2022
+						<div>
+							Made with <i class="ion-heart"></i> by <a href="http://kodinger.com">RS1</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- End Footer -->
+
+	<!-- JS -->
+	<script>
+		localStorage.setItem("movePage", "");
+	</script>
+	<script src="js/jquery.js"></script>
+	<script src="js/jquery.migrate.js"></script>
+	<script src="scripts/bootstrap/bootstrap.min.js"></script>
+	<script>var $target_end = $(".best-of-the-week");</script>
+	<script src="scripts/jquery-number/jquery.number.min.js"></script>
+	<script src="scripts/owlcarousel/dist/owl.carousel.min.js"></script>
+	<script src="scripts/magnific-popup/dist/jquery.magnific-popup.min.js"></script>
+	<script src="scripts/easescroll/jquery.easeScroll.js"></script>
+	<script src="scripts/sweetalert/dist/sweetalert.min.js"></script>
+	<script src="scripts/toast/jquery.toast.min.js"></script>
+	<script src="js/demo.js"></script>
+	<script src="js/e-magz.js"></script>
+	<script src="scripts/Categories/Category.js"></script>
+	<script src="scripts/Categories/categoryControl.js"></script>
+</body>
+
+</html>
